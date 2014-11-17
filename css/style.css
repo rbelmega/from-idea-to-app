@@ -1,0 +1,74 @@
+body {
+	background: url('../img/bg.jpg');
+	background-size: cover;
+	height:100%;
+	margin: 0;
+}
+
+.present,
+.controls {
+	cursor: pointer;
+	width: 280px;
+	position: fixed;
+	top:0;
+	bottom:0;
+	margin: auto;
+	height: 200px;
+}
+
+.present {
+	transition: all .4s linear;
+	background: url("../img/presentation.png");
+	background-size: cover;
+	left: 30%;
+}
+.controls {
+	transition: all .4s linear;
+	background: url("../img/controls.png");
+	background-size: cover;
+	right: 20%;
+}
+
+.present:hover,
+.controls:hover {
+	transition: all .6s ease-in-out;
+	transform: scale(1.5);
+}
+
+
+.present span {
+	font-size: 30px;
+	text-shadow: 1px 1px 1px #000000;
+	position: absolute;
+	bottom: -30px;
+	color: #ffffff;
+	transition: all .1s linear;
+	opacity:0;
+	transform: translateX(-150px);
+}
+.present:hover span {
+	transition: all .5s linear;
+	opacity:1;
+	color: #ffffff;
+	transform: scale(2.1);
+	transform: translateX(60px);
+}
+
+
+.controls span {
+	font-size: 30px;
+	text-shadow: 1px 1px 1px #000000;
+	position: absolute;
+	bottom: -30px;
+	color: #ffffff;
+	transition: all .1s linear;
+	opacity:0;
+	transform: translateX(250px);
+}
+.controls:hover span {
+	transition: all .5s linear;
+	opacity:1;
+	color: #ffffff;
+	transform: scale(2.1);
+	transform: translateX(70px);
+}
